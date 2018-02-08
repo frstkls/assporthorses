@@ -1,15 +1,18 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
+      <!-- <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand visible-xs" data-toggle="collapse" data-target="#navbar"><?= $site->title()->html() ?></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+
+      </div> -->
+
+      <a class="navbar-brand pull-right navbar-right" href="<?= url() ?>">
+        <img src="<?php echo kirby()->urls()->assets() . '/img/logo.png' ?>">
+      </a>
+      <div id="myNav" class="overlay">
             <ul class="nav nav-justified">
                 <? foreach($pages->visible() as $p): ?>
                     <li <? e($p->isOpen(), ' class="active"') ?>>
@@ -19,6 +22,15 @@
                     </li>
                 <? endforeach ?>
             </ul>
-        </div>
+      </div>
     </div>
-</nav>
+  </nav>
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>

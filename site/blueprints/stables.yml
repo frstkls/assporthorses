@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Contact
+title: Default
 pages: default
 fields:
   title:
@@ -29,3 +29,10 @@ fields:
   formaatbeeldhome:
     label: Formaat beeld homepagina
     type: text
+  slides:
+    label: Stal foto's
+    type: structure
+    fields:
+      slide:
+        label: Slide
+        type: image

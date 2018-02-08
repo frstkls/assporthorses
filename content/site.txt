@@ -1,4 +1,4 @@
-Title: Kirby-Bootstrap-Starterkit
+Title: AS Sport Horses
 
 ----
 
@@ -6,7 +6,7 @@ Titelsuffix:
 
 ----
 
-Author: NECKRHINOS
+Author: FirstKlaas
 
 ----
 
@@ -15,3 +15,7 @@ Description:
 ----
 
 Footer: Copyright (date: Year)
+
+----
+
+Titlesuffix: 
